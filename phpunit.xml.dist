@@ -20,15 +20,19 @@
             <directory>tests</directory>
         </testsuite>
     </testsuites>
+    <php>
+        <env name="DB_CONNECTION" value="testing" />
+        <env name="APP_KEY" value="base64:2fl+Ktvkfl+Fuz4Qp/A75G2RTiWVA/ZoKZvp6fiiM10=" />
+    </php>
     <coverage>
         <report>
-            <html outputDirectory="build/coverage"/>
-            <text outputFile="build/coverage.txt"/>
-            <clover outputFile="build/logs/clover.xml"/>
+            <html outputDirectory="build/coverage" />
+            <text outputFile="build/coverage.txt" />
+            <clover outputFile="build/logs/clover.xml" />
         </report>
     </coverage>
     <logging>
-        <junit outputFile="build/report.junit.xml"/>
+        <junit outputFile="build/report.junit.xml" />
     </logging>
     <source>
         <include>
