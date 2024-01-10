@@ -5,15 +5,7 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/pratikkuikel/wasabi/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/pratikkuikel/wasabi/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/pratikkuikel/wasabi.svg?style=flat-square)](https://packagist.org/packages/pratikkuikel/wasabi)
 
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
-
-## Support us
-
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/wasabi.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/wasabi)
-
-We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
-
-We highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using. You'll find our address on [our contact page](https://spatie.be/about-us). We publish all received postcards on [our virtual postcard wall](https://spatie.be/open-source/postcards).
+This package converts the level one json field attributes to the attributes of the model whenever the data is retrieved from the database using eloquent. It works only on retrieval.
 
 ## Installation
 
@@ -23,37 +15,40 @@ You can install the package via composer:
 composer require pratikkuikel/wasabi
 ```
 
-You can publish and run the migrations with:
-
-```bash
-php artisan vendor:publish --tag="wasabi-migrations"
-php artisan migrate
-```
-
-You can publish the config file with:
-
-```bash
-php artisan vendor:publish --tag="wasabi-config"
-```
-
-This is the contents of the published config file:
-
-```php
-return [
-];
-```
-
-Optionally, you can publish the views using
-
-```bash
-php artisan vendor:publish --tag="wasabi-views"
-```
-
 ## Usage
 
 ```php
-$wasabi = new Pratik Kuikel\Wasabi();
-echo $wasabi->echoPhrase('Hello, Pratik Kuikel!');
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+use Pratikkuikel\Wasabi\Traits\Wasabi;
+
+class State extends Model
+{
+    use HasFactory;
+    use Wasabi;
+
+    protected $guarded = [];
+
+    protected $casts = [
+        'data' => 'array'
+    ];
+
+    // OR
+    protected $casts = [
+        'custom_field' => 'array'
+    ];
+
+    // Override the default dataField with any other preferred name
+    // you don't need to define the constructor to use the default `data` field
+    // public function __construct(array $attributes = [])
+    // {
+    //     parent::__construct($attributes);
+    //     self::setDataField('custom_field');
+    // }
+}
+
 ```
 
 ## Testing
@@ -76,8 +71,8 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ## Credits
 
-- [pratik kuikel](https://github.com/pratikkuikel)
-- [All Contributors](../../contributors)
+-   [pratik kuikel](https://github.com/pratikkuikel)
+-   [All Contributors](../../contributors)
 
 ## License
 
