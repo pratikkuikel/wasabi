@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Pratik Kuikel\Wasabi\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class WasabiCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'wasabi';
 
     public $description = 'My command';
 
