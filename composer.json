@@ -1,6 +1,7 @@
 {
     "name": "pratikkuikel/wasabi",
-    "description": "This is my package wasabi",
+    "version": "1.0.0",
+    "description": "Laravel Json column keys to model attributes",
     "keywords": [
         "pratikkuikel",
         "laravel",

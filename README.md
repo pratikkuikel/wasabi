@@ -5,7 +5,7 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/pratikkuikel/wasabi/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/pratikkuikel/wasabi/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/pratikkuikel/wasabi.svg?style=flat-square)](https://packagist.org/packages/pratikkuikel/wasabi)
 
-This package converts the level one json field attributes to the attributes of the model whenever the data is retrieved from the database using eloquent. It works only on retrieval.
+This package converts the level one json column keys to the attributes of the model whenever the data is retrieved from the database using eloquent. It works only on retrieval.
 
 ## Installation
 
