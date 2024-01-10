@@ -72,10 +72,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "pratikkuikel\\Wasabi\\WasabiServiceProvider"
+                "Pratikkuikel\\Wasabi\\WasabiServiceProvider"
             ],
             "aliases": {
-                "Wasabi": "pratikkuikel\\Wasabi\\Facades\\Wasabi"
+                "Wasabi": "Pratikkuikel\\Wasabi\\Facades\\Wasabi"
             }
         }
     },
