@@ -34,13 +34,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Pratik Kuikel\\Wasabi\\": "src/",
-            "Pratik Kuikel\\Wasabi\\Database\\Factories\\": "database/factories/"
+            "Pratikkuikel\\Wasabi\\": "src/",
+            "Pratikkuikel\\Wasabi\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Pratik Kuikel\\Wasabi\\Tests\\": "tests/",
+            "Pratikkuikel\\Wasabi\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -72,10 +72,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Pratik Kuikel\\Wasabi\\WasabiServiceProvider"
+                "pratikkuikel\\Wasabi\\WasabiServiceProvider"
             ],
             "aliases": {
-                "Wasabi": "Pratik Kuikel\\Wasabi\\Facades\\Wasabi"
+                "Wasabi": "pratikkuikel\\Wasabi\\Facades\\Wasabi"
             }
         }
     },

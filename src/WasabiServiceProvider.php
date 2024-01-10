@@ -1,10 +1,10 @@
 <?php
 
-namespace Pratik Kuikel\Wasabi;
+namespace Pratikkuikel\Wasabi;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Pratik Kuikel\Wasabi\Commands\WasabiCommand;
+use Pratikkuikel\Wasabi\Commands\WasabiCommand;
 
 class WasabiServiceProvider extends PackageServiceProvider
 {

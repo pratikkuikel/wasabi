@@ -1,5 +1,6 @@
 <?php
 
-use Pratik Kuikel\Wasabi\Tests\TestCase;
+// use pratikkuikel\Wasabi\Tests\TestCase;
+use Pratikkuikel\Wasabi\Tests\TestCase;
 
 uses(TestCase::class)->in(__DIR__);

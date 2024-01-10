@@ -1,6 +1,6 @@
 <?php
 
-namespace Pratik Kuikel\Wasabi\Commands;
+namespace Pratikkuikel\Wasabi\Commands;
 
 use Illuminate\Console\Command;
 

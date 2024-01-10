@@ -1,10 +1,10 @@
 <?php
 
-namespace Pratik Kuikel\Wasabi\Tests;
+namespace Pratikkuikel\Wasabi\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Pratik Kuikel\Wasabi\WasabiServiceProvider;
+use Pratikkuikel\Wasabi\WasabiServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -13,7 +13,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Pratik Kuikel\\Wasabi\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'Pratikkuikel\\Wasabi\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 

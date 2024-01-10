@@ -1,6 +1,6 @@
 <?php
 
-namespace Pratik Kuikel\Wasabi\Database\Factories;
+namespace Pratikkuikel\Wasabi\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 

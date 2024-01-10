@@ -1,6 +1,6 @@
 <?php
 
-// config for Pratik Kuikel/Wasabi
+// config for Pratikkuikel/Wasabi
 return [
 
 ];

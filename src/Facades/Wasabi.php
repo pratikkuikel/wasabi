@@ -1,16 +1,16 @@
 <?php
 
-namespace Pratik Kuikel\Wasabi\Facades;
+namespace Pratikkuikel\Wasabi\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Pratik Kuikel\Wasabi\Wasabi
+ * @see \Pratikkuikel\Wasabi\Wasabi
  */
 class Wasabi extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return \Pratik Kuikel\Wasabi\Wasabi::class;
+        return \Pratikkuikel\Wasabi\Wasabi::class;
     }
 }
