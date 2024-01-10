@@ -8,6 +8,7 @@ use Pratikkuikel\Wasabi\Traits\Wasabi;
 class State extends Model
 {
     use Wasabi;
+
     protected $guarded = [];
 
     // override the default json data field, default field name is `data`
@@ -18,6 +19,6 @@ class State extends Model
     // }
 
     protected $casts = [
-        'data' => 'array'
+        'data' => 'array',
     ];
 }
