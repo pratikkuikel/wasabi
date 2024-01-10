@@ -2,9 +2,9 @@
 
 namespace Pratikkuikel\Wasabi;
 
+use Pratikkuikel\Wasabi\Commands\WasabiCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Pratikkuikel\Wasabi\Commands\WasabiCommand;
 
 class WasabiServiceProvider extends PackageServiceProvider
 {
