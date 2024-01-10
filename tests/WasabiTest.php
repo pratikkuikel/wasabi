@@ -1,12 +1,12 @@
 <?php
 
-use Pratikkuikel\Wasabi\Wasabi;
-use Pratikkuikel\Wasabi\Facades\Wasabi as Facade;
-use Pratikkuikel\Wasabi\Models\State;
-use Illuminate\Foundation\Testing\RefreshDatabase;
 use Faker\Factory as Faker;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Str;
+use Pratikkuikel\Wasabi\Facades\Wasabi as Facade;
 use Pratikkuikel\Wasabi\Models\MockState;
+use Pratikkuikel\Wasabi\Models\State;
+use Pratikkuikel\Wasabi\Wasabi;
 
 uses(RefreshDatabase::class);
 
@@ -41,7 +41,7 @@ it('has 10 rows in the state model', function () {
                 ],
                 'lmao' => Str::random(4),
             ],
-            'abbr' => $faker->stateAbbr()
+            'abbr' => $faker->stateAbbr(),
         ]);
     }
     expect(State::count())->toBe(10);
@@ -58,7 +58,7 @@ it('confirms that the one level deep json attributes are being merged', function
             ],
             'lmao' => 'hello',
         ],
-        'abbr' => 'NY'
+        'abbr' => 'NY',
     ]);
     $state = State::first();
     expect(array_key_exists('hello', $state->getAttributes()))->toBeTrue();
@@ -75,7 +75,7 @@ it('confirms that the json field name is changed and custom json field can be us
             ],
             'lmao' => 'hello',
         ],
-        'abbr' => 'NY'
+        'abbr' => 'NY',
     ]);
     $state = MockState::first();
     expect(array_key_exists('hello', $state->getAttributes()))->toBeTrue();

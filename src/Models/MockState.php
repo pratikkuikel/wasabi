@@ -21,6 +21,6 @@ class MockState extends Model
     }
 
     protected $casts = [
-        'random_field_name' => 'array'
+        'random_field_name' => 'array',
     ];
 }
