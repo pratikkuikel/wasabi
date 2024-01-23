@@ -36,17 +36,25 @@ class State extends Model
     ];
 
     // OR
-    protected $casts = [
-        'custom_field' => 'array'
-    ];
+    // protected $casts = [
+    //     'custom_field' => 'array'
+    // ];
+
+    // you don't need to define the constructor to use the default `data` field
+    public function __construct(array $attributes = [])
+    {
+    // set wasabi's status false based on some condtions
+        if($condition)
+        {
+         static::setWasabiStatus(true);
+        }
 
     // Override the default dataField with any other preferred name
-    // you don't need to define the constructor to use the default `data` field
-    // public function __construct(array $attributes = [])
-    // {
-    //     parent::__construct($attributes);
-    //     self::setDataField('custom_field');
-    // }
+         static::setDataField('custom_field');
+
+    // construct parent after setting data and status
+         parent::__construct($attributes);
+    }
 }
 
 ```
