@@ -16,8 +16,9 @@ class MockState extends Model
     // override the default json data field, default field name is `data`
     public function __construct(array $attributes = [])
     {
+        static::setWasabiStatus(true);
+        static::setDataField('random_field_name'); // Override the default dataField
         parent::__construct($attributes);
-        self::setDataField('random_field_name'); // Override the default dataField
     }
 
     protected $casts = [
