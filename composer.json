@@ -1,6 +1,6 @@
 {
     "name": "pratikkuikel/wasabi",
-    "version": "2.0",
+    "version": "2.1",
     "description": "Laravel Json column keys to model attributes",
     "keywords": [
         "pratikkuikel",
