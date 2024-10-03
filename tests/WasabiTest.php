@@ -19,7 +19,7 @@ it('can test', function () {
 });
 
 it('returns hello senorita', function () {
-    expect((new Wasabi())->hello())->toBe('hello senorita');
+    expect((new Wasabi)->hello())->toBe('hello senorita');
 });
 
 it('returns hello senorita from facade', function () {
