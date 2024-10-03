@@ -28,6 +28,8 @@ class TestCase extends Orchestra
     {
         config()->set('database.default', 'testing');
 
+        config()->set('app.env', 'testing');
+
         config()->set('database.connections.testing', [
             'driver' => 'sqlite',
             'database' => ':memory:',
